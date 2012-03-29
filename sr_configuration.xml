@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : core_config.xml
+    Created on : February 11, 2012, 4:16 PM
+    Author     : smarkoski
+    Description:
+        Purpose of the document follows.
+-->
+
+<!DOCTYPE Base PUBLIC '-//DTD XCatalog//EN' 'null'>
+<sr_configuration>
+
+    <coreconfig> <!-- requires a config module named coreconfig.module.php -->
+        <paths>
+            <path name="view_path">App/Views/</path>
+            <path name="controller_path">App/Controllers/</path>
+            <path name="model_path">App/Models/</path>
+            <path name="utility_path">Core/Utilities/</path>
+            <path name="app_utility_path">App/Utilities/</path>
+            <path name="task_path">App/Tasks/</path>
+            <path name="exception_path">Core/Exceptions/</path>
+            <path name="core_model_path">Core/Models/</path>
+            <path name="user_validation_rules_path">App/Utilities/Validation/Rules/</path>
+        </paths>
+    </coreconfig>
+    
+    <appconfig>
+        <values>
+            <value name="basepath">/sr</value>
+            <value name="mod_rewrite_enabled">1</value>
+            <value name="default_controller">index</value>
+        </values>
+
+        <database>
+            <host></host>
+            <databasename></databasename>
+            <username></username>
+            <password></password>
+        </database>
+    </appconfig>
+
+</sr_configuration>

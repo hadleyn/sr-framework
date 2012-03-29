@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule \.(css|jpe?g|gif|png)$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php\/$1 [L,QSA]
+
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+####PRODUCTION
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+####DEVELOPMENT
+#RewriteRule ^(.*)$ /sr/index.php/$1 [L]
